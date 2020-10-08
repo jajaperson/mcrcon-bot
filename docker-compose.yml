@@ -1,0 +1,13 @@
+version: "3"
+services:
+  mcrcon_bot:
+    build: .
+    container_name: node-docker
+    # volumes:
+    # - ./:/usr/src/app
+    # - ./:/app
+    environment:
+      - TOKEN
+      - RCON_HOST
+      - RCON_PORT
+      - RCON_PASS
